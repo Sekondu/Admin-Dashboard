@@ -1,0 +1,247 @@
+*{
+    font-family:"Roboto",sans-serif;
+}
+img{
+    width:30px;
+    aspect-ratio:1;
+}
+.search>img{
+    margin-top:15px;
+}
+.dashboard{
+    grid-area:dashboard;
+}
+.header{
+    grid-area:header;
+}
+.body_container{
+    grid-area:body;
+}
+.announcements_trending{
+    grid-area:announce;
+}
+.dashboard,
+.header,
+.body_container,
+.announcements_trending {
+  min-width: 0;
+  min-height: 0;
+}
+body{
+    background-color:rgba(128, 177, 197, 0.2);
+    display:grid;
+    grid-template-areas: 
+    "dashboard header header"
+    "dashboard body announce";
+    grid-template-columns:1.5fr 5fr 2fr;
+    grid-template-rows:0.125fr 1fr;
+    margin:0;
+}
+.dashboard{
+    background-color: white;
+    color:black;
+    padding-left:40px;
+    box-shadow:1rem 0.4rem 0.78rem grey;
+    grid-template-rows:0.07fr 0.125fr 0.125fr;
+    gap:40px;
+}
+.dashboard, .header, .upper_dashboard, .lower_dashboard,
+ .projects, .cards_container, .announcements_trending{
+    display:grid;
+}
+.upper_dashboard{
+    grid-template-rows:repeat(6,0.08fr);
+    gap:15px;
+}
+.lower_dashboard{
+    grid-template-rows: repeat(3,0.125fr);
+    gap:15px;
+}
+.upper_header, .lower_header, .upper_header_info, .announcements{
+    display:flex;
+}
+.header{
+    height:4rem;
+    background-color: white;
+    grid-template-rows:4rem 7rem;
+    box-shadow:0 0.5rem 0.5rem grey;
+    height:200px;
+}
+.upper_header{
+    justify-content: space-between;
+    align-items: start;
+    margin-top:15px;
+    margin-left:30px;
+    align-self:start;
+}
+.upper_header_info{
+    justify-content: center;
+    margin-right:150px;
+    align-items: center;
+}
+input{
+    width:600px;
+    height:20px;
+    border:1px solid transparent;
+    border-radius:15px;
+    background-color:lightgrey;
+    box-shadow:0 0.2rem 0.6rem grey;
+    margin-top:25px;
+}
+.lower_header{
+    display:flex;
+    justify-content: space-between;
+    margin-left:30px;
+}
+.header_buttons{
+    margin-right:130px;
+    height:100px;
+}
+.greeting_container{
+    display:flex;
+    justify-content: space-between;
+}
+.greeting{
+    margin-left:20px;
+}
+.header_buttons{
+    align-self: center;
+}
+.upper_header_info > *{
+    margin:10px;
+}
+.profile{
+    width:40px;
+}
+.bell{
+    width:30px;
+}
+.name{
+    align-self: center;
+}
+button{
+    width:80px;
+    background-color: lightblue;
+    border:1px solid transparent;
+    border-radius:10px;
+    margin:10px;
+    height:30px;
+    height:50px;
+    margin-top:20px;
+}
+.projects{
+    grid-template-rows:0.15fr 1fr;
+    margin-top:30px;
+    margin-left:30px;
+}
+.cards_container{
+    grid-template: 0.125fr 0.125fr 0.125fr / 2fr 2fr;
+    margin-top:-60px;
+    gap:35px;
+}
+.card{
+    background:white;
+    box-shadow:0 0.3rem 0.6rem grey;
+    padding-top:10px;
+    display:flex;
+    flex-direction: column;
+    border:1px solid transparent;
+    border-radius:15px;
+    height:10rem;
+}
+.card_icons{
+    flex:1;
+    align-self: end;
+    display:flex;
+    gap:20px;
+    margin-top:-5px;
+    margin-right:10px;
+}
+.text{
+    margin-top:20px;
+    width:300px;
+    padding-left:20px;
+}
+.announcements_trending{
+    grid-template-rows: 0.015fr 1fr;
+    margin-top:-5px;
+    justify-self: center;
+    
+}
+.announcements{
+    flex-direction: column;
+    margin-top:-20px;
+}
+.announcements_title{
+    margin-bottom:-15px;
+    margin-top:20px;
+}
+.announcements_details{
+    background-color:white;
+    color:black;
+    box-shadow:0 0.3rem 0.6rem grey;
+    margin-left:20px;
+    height:300px;
+    width:300px;
+    margin-top:-11px;
+    border:1px solid transparent;
+    border-radius:15px;
+}
+.announcements_details>div>p{
+padding-left:20px;
+font-size:12px;
+text-align:left;
+}
+
+.your_projects{
+    font-size: 30px;
+    font-weight:900;
+}
+.announce_title{
+    text-align: center;
+    font-weight:600;
+    font-size:15px;
+}
+.announcements_title>p{
+        font-size: 30px;
+    font-weight:900;
+}
+.trending{
+    display:grid;
+    grid-template-rows:0.35fr 0.5fr;
+    flex-direction: column;
+    margin-left:50px;
+}
+.trending_details{
+    display:grid;
+    justify-content: start;
+    flex-direction: column;
+    margin-top:-75px;
+    height:14rem;
+    gap:-5px;
+    background-color:white;
+    color:black;
+    box-shadow:0 0.3rem 0.6rem grey;
+    border:1px solid transparent;
+    border-radius:15px;
+    margin-left:-33px;
+}
+.trending1, .trending2, .trending3, .trending4{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.account{
+    margin-bottom:-10px;
+}
+.trending_title>p{
+       font-size: 30px;
+    font-weight:900;
+    margin-left:-45px;
+    margin-bottom:-70px;
+    margin-top:5px;
+}
+.name_and_info>p{
+    font-size:12px;
+}
